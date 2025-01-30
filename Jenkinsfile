@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        // git branch: 'main', url: 'https://github.com/Wandati/spring-boot-app-devops.git'
+        git branch: 'main', url: 'https://github.com/Wandati/spring-boot-app-devops.git'
       }
     }
     stage('Build and Test') {
